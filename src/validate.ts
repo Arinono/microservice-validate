@@ -21,6 +21,10 @@ class Validate {
     })
 
     router.post('/validate', (req, res) => {
+      if (!req.body.file) {
+        res.status(200).send('No file provided')
+        return
+      }
       const json = this.readYAML(req.body.file)
       const options = {}
       try {
