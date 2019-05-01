@@ -1,6 +1,6 @@
 {
   "name": "microservice-validate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "One microservice to rule them all",
   "main": "app.js",
   "scripts": {
