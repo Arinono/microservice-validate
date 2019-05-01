@@ -1,0 +1,29 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ['node', 'validate']
+info:
+  version: 1.0.0
+  title: microservice-validate
+  description: One microservice to rule them all
+  license:
+    name: ISC
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Aurelien ARINO
+    url: https://storyscript.io
+    email: aurelien@storyscript.io
+actions:
+  validate:
+    help: Validates the provided microservice.yml content
+    arguments:
+      file:
+        type: string
+        in: requestBody
+        help: The content of the microservice.yml you want to validate (in a multipart/form-data)
+    http:
+      port: 5000
+      method: post
+      path: /validate
+    output:
+      type: string

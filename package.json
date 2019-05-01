@@ -1,0 +1,37 @@
+{
+  "name": "microservice-validate",
+  "version": "0.0.0",
+  "description": "One microservice to rule them all",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "start": "./validate",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arinono/microservice-validate.git"
+  },
+  "keywords": [
+    "microservice",
+    "omg"
+  ],
+  "author": "Aurelien ARINO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arinono/microservice-validate/issues"
+  },
+  "homepage": "https://github.com/Arinono/microservice-validate#readme",
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.1",
+    "nodemon": "^1.18.11",
+    "request": "^2.88.0",
+    "typescript": "^3.4.5",
+    "underscore": "^1.9.1",
+    "yamljs": "^0.3.0"
+  }
+}
