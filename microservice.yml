@@ -2,9 +2,13 @@ omg: 1
 lifecycle:
   startup:
     command: ['node', 'validate']
+health:
+  http:
+    path: /health
+    port: 5000
 info:
   version: 1.0.0
-  title: microservice-validate
+  title: microservice-validates
   description: One microservice to rule them all
   license:
     name: ISC

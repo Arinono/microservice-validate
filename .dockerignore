@@ -3,3 +3,4 @@ dist/
 .gitignore
 README.md
 package-lock.json
+.vscode/
