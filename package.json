@@ -1,6 +1,6 @@
 {
   "name": "microservice-validate",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "One microservice to rule them all",
   "main": "app.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "express": "^4.17.1",
     "multer": "^1.4.1",
     "nodemon": "^1.19.1",
-    "omg-validate": "^0.13.4",
+    "omg-validate": "^0.13.6",
     "typescript": "^3.5.2"
   }
 }
