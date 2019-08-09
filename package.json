@@ -31,6 +31,6 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "omg-validate": "^0.14.0"
+    "omg-validate": "^0.14.1"
   }
 }
