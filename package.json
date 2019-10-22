@@ -14,7 +14,7 @@
   },
   "keywords": [
     "microservice",
-    "omg"
+    "oms"
   ],
   "author": "Aurelien ARINO",
   "license": "ISC",
@@ -31,6 +31,6 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "omg-validate": "^0.14.1"
+    "@microservices/validate": "^0.15.1"
   }
 }

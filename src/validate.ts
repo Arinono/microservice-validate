@@ -1,7 +1,7 @@
 import { app, router } from './wrapper/express'
 import bodyparser from './wrapper/body-parser'
 import upload from './wrapper/multer'
-import { OMGValidate } from 'omg-validate'
+import { OMGValidate } from '@microservices/validate'
 
 class Validate {
   constructor() {
