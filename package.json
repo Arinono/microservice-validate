@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arinono/microservice-validate.git"
+    "url": "git+https://github.com/oms-services/oms-validate.git"
   },
   "keywords": [
     "microservice",
@@ -19,9 +19,9 @@
   "author": "Aurelien ARINO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arinono/microservice-validate/issues"
+    "url": "https://github.com/oms-services/oms-validate/issues"
   },
-  "homepage": "https://github.com/Arinono/microservice-validate#readme",
+  "homepage": "https://github.com/oms-services/oms-validate#readme",
   "devDependencies": {
     "@types/node": "^11.13.14",
     "body-parser": "^1.19.0",
@@ -31,6 +31,6 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "@microservices/validate": "^0.15.1"
+    "@microservices/validate": "0.16.1"
   }
 }
