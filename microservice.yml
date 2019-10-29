@@ -30,4 +30,7 @@ actions:
       method: post
       path: /validate
     output:
-      type: string
+      type: list
+      list:
+        elements:
+          type: string
