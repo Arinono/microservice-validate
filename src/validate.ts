@@ -1,7 +1,8 @@
 import { app, router } from './wrapper/express'
 import bodyparser from './wrapper/body-parser'
 import upload from './wrapper/multer'
-import { OMGValidate } from '@microservices/validate'
+import OMSValidate from '@microservices/validate'
+const yaml = require('js-yaml')
 
 class Validate {
   constructor() {
@@ -24,7 +25,8 @@ class Validate {
         return
       }
       try {
-        res.status(200).send(new OMGValidate(req.body.file).validate())
+        const json = yaml.safeLoad(req.body.file)
+        res.status(200).send(OMSValidate(json))
       } catch (e) {
         res.status(200).send(e)
       }
