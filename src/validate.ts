@@ -1,7 +1,7 @@
 import { app, router } from './wrapper/express'
 import bodyparser from './wrapper/body-parser'
 import upload from './wrapper/multer'
-import { OMGValidate } from '@microservices/validate'
+import { validate as OMSValidate } from '@microservices/validate'
 
 class Validate {
   constructor() {
@@ -24,7 +24,7 @@ class Validate {
         return
       }
       try {
-        res.status(200).send(new OMGValidate(req.body.file).validate())
+        res.status(200).send(OMSValidate(req.body.file))
       } catch (e) {
         res.status(200).send(e)
       }
