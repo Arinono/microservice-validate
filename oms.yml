@@ -1,22 +1,24 @@
 oms: 1
-lifecycle:
-  startup:
-    command: ['node', 'validate']
-health:
-  http:
-    path: /health
-    port: 5000
 info:
   version: 1.1.0
   title: microservice-validates
   description: One microservice to rule them all
   license:
     name: ISC
-    url: https://opensource.org/licenses/MIT
+    url: 'https://opensource.org/licenses/MIT'
   contact:
-    name: Aurelien ARINO
-    url: https://storyscript.io
-    email: aurelien@storyscript.io
+    name: Open Microservices
+    url: 'https://openmicroservices.org'
+    email: core@openmicroservices.org
+lifecycle:
+  startup:
+    command:
+      - node
+      - validate
+health:
+  http:
+    path: /health
+    port: 5000
 actions:
   validate:
     help: Validates the provided microservice.yml content
@@ -24,7 +26,9 @@ actions:
       file:
         type: string
         in: requestBody
-        help: The content of the microservice.yml you want to validate (in a multipart/form-data)
+        help: >-
+          The content of the microservice.yml you want to validate (in a
+          multipart/form-data)
     http:
       port: 5000
       method: post
