@@ -1,4 +1,4 @@
-# _OMS Validate_ Open Microservice
+# _Open Microservices Validator_ Open Microservice
 
 > One microservice to rule them all
 
@@ -39,13 +39,13 @@ within this project's root directory:
 
 ##### validate
 
-> Validates the provided microservice.yml content
+> Validates the provided oms.yml content
 
 ##### Action Arguments
 
-| Argument Name | Type     | Required | Default | Description                                                                         |
-| :------------ | :------- | :------- | :------ | :---------------------------------------------------------------------------------- |
-| file          | `string` | `false`  | None    | The content of the microservice.yml you want to validate (in a multipart/form-data) |
+| Argument Name | Type     | Required | Default | Description                                                                |
+| :------------ | :------- | :------- | :------ | :------------------------------------------------------------------------- |
+| file          | `string` | `false`  | None    | The content of the oms.yml you want to validate (in a multipart/form-data) |
 
 ```shell
 oms run validate \

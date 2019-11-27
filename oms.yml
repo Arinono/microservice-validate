@@ -1,7 +1,7 @@
 oms: 1
 info:
   version: 1.1.0
-  title: microservice-validates
+  title: Open Microservices Validator
   description: One microservice to rule them all
   license:
     name: ISC
@@ -21,14 +21,13 @@ health:
     port: 5000
 actions:
   validate:
-    help: Validates the provided microservice.yml content
+    help: Validates the provided oms.yml content
     arguments:
       file:
         type: string
         in: requestBody
         help: >-
-          The content of the microservice.yml you want to validate (in a
-          multipart/form-data)
+          The content of the oms.yml you want to validate (in a multipart/form-data)
     http:
       port: 5000
       method: post
